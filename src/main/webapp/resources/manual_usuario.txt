@@ -1,0 +1,95 @@
+1. Introduction
+
+This web application is designed to streamline factory management, enabling users to efficiently manage raw materials, products, and users. It offers an intuitive and functional interface to optimize processes.
+
+2. System Requirements
+
+To use the application, you need the following:
+
+An updated web browser (Google Chrome, Mozilla Firefox, Microsoft Edge, or similar).
+
+Internet connection.
+
+Access credentials provided by the administrator.
+
+3. Login
+
+Access the login page at the URL /user/login.jsp.
+
+Enter your username and password in the corresponding fields.
+
+Click on the "Login" button.
+
+If the credentials are correct, you will be redirected to the application's main dashboard.
+
+Administrator User:
+-Name:llopez
+-Password:abc123.
+
+4. Application Navigation
+
+The application features a main navigation menu divided into the following sections:
+
+Raw Materials
+
+In this section, you can:
+
+View available raw materials.
+
+Search for raw materials based on specific criteria.
+
+Products
+
+This section allows you to:
+
+Create new products and associate raw materials.
+
+View the list of existing products and their consumption.
+
+Users
+
+Available options:
+
+Manage system users.
+
+View information about roles and permissions.
+
+5. Main Features
+
+Raw Materials Search
+
+Go to the "Raw Materials" section from the main menu.
+
+Fill in the filters in the search form according to your needs.
+
+Click "Search" to view the results.
+
+The information will be displayed in an organized table.
+
+Product Creation
+
+Access the "Products" module.
+
+Click "Create Product".
+
+Fill in the required fields (product name, description, etc.).
+
+Select the raw materials and specify the required units.
+
+Save the changes to register the new product.
+
+User Management
+
+From the "Users" menu, access the "User Management" option.
+
+You can:
+
+Create new users.
+
+Modify existing information.
+
+Delete users who no longer need access.
+
+6. Additional Information and Support
+
+If you encounter issues or have questions about using the application, you can contact the technical support team or consult additional documentation provided by the system administrator.

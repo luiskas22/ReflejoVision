@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #e0e7ff; /* Light blue background */
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Add decorative shapes */
+.shape {
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.shape1 {
+    width: 150px;
+    height: 150px;
+    background-color: #6a11cb;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    top: 20%;
+    left: 5%;
+}
+
+.shape2 {
+    width: 200px;
+    height: 200px;
+    background-color: #2575fc;
+    border-radius: 50%;
+    bottom: 20%;
+    right: 10%;
+}
+
+.shape3 {
+    width: 100px;
+    height: 100px;
+    background-color: #FFC107;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+/* Form Container */
+.login-container {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+/*
+/* Title Background Text */
+body::after {
+    content: "ReflejoVision";
+    position: absolute;
+    top: 50px; /* Adjust as necessary */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    z-index: -1; /* Behind the form */
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Soft shadow */
+    
+}
+
+/* Input Fields */
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+/* Submit Button */
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFC107;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #e0a800;
+}
+
+/* Reset Button */
+.login-container input[type="reset"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.login-container input[type="reset"]:hover {
+    background-color: #bbb;
+}
+
+/* Auth Link Style */
+.auth-link-class {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.auth-link-class:hover {
+    text-decoration: underline;
+    color: #e0a800;
+}
+
+.login-image {
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add space below it */
+    width: 250px; /* Adjust the width as necessary */
+    height: auto;
+}

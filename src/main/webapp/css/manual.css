@@ -1,0 +1,23 @@
+/* Style for the container of the manual content */
+#manualContent {
+    display: none; /* Initially hide the content */
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Style for the toggle arrow */
+#toggleArrow {
+    transition: transform 0.3s ease-in-out; /* Smooth rotation of the arrow */
+    cursor: pointer;
+}
+
+/* Optional: Style for the header of the manual */
+#manualHeader {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+}

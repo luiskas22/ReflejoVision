@@ -1,0 +1,87 @@
+/* Estilo general del menú */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px; /* Reducir un poco el margen entre los elementos principales */
+}
+
+/* Estilo del menú horizontal */
+.horizontal-menu {
+  background-color: #0056b3; /* Fondo azul más suave para que combine con el resto de la aplicación */
+  color: white;
+  padding: 10px 0; /* Relleno vertical */
+  margin-top: 0;
+  border-radius: 8px; /* Bordes redondeados para el menú */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para darle profundidad */
+}
+
+.horizontal-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.horizontal-menu li {
+  position: relative;
+}
+
+/* Estilo de los enlaces del menú */
+.horizontal-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px; /* Aumento el área de los enlaces */
+  display: block;
+  font-size: 1.6em; /* Aumentar el tamaño de fuente de los elementos principales */
+  font-weight: bold; /* Hacer que el texto sea más fuerte */
+  text-transform: uppercase; /* Convertir el texto a mayúsculas */
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.horizontal-menu a:hover {
+  background-color: #003f7d; /* Fondo azul más oscuro al pasar el ratón */
+  transform: scale(1.05); /* Agrandar ligeramente el botón al pasar el ratón */
+}
+
+/* Estilo del submenú */
+.submenu {
+  visibility: hidden;
+  position: absolute;
+  background-color: #0073e6; /* Fondo más suave y claro para el submenú */
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  min-width: 200px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra para el submenú */
+  display: block;
+  border-radius: 8px; /* Bordes redondeados para el submenú */
+}
+
+.horizontal-menu li:hover .submenu {
+  visibility: visible;
+}
+
+/* Estilo de los elementos del submenú */
+.submenu li {
+  text-align: left;
+  font-size: 1.3em; /* Tamaño de la fuente de los elementos del submenú */
+  padding: 10px 20px;
+}
+
+/* Estilo de los enlaces dentro del submenú */
+.submenu a {
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.3em;
+  text-transform: none; /* No se cambia el texto a mayúsculas en el submenú */
+  transition: background 0.3s ease;
+}
+
+.submenu a:hover {
+  background-color: #003f7d; /* Fondo azul oscuro al pasar el ratón sobre el submenú */
+  transform: scale(1.03); /* Agrandar ligeramente el submenú al pasar el ratón */
+}
