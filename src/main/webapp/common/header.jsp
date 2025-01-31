@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css"
 	href="<c:url value='/css/styles.css'/>" />
     <link rel="icon" href="<c:url value='/images/rvLogo.ico'/>" type="image/x-icon">
+<script src="${pageContext.request.contextPath}/js/jquery/jquery-3.7.1.min.js"></script>
 
 
 <title>Reflejo Vision</title>

@@ -3,7 +3,30 @@
 <%@include file="/common/header.jsp"%>
 <%@ page import="com.pinguela.web.util.*"%>
 
-
+<script>
+	$(document).ready(function() {
+		$("#nombre").keyup(function() {
+			var nombre = $(this).val();
+			$.ajax({
+				type: "GET",
+				url: "http://localhost:8080/ReflejoVisionWebServices/materiaprima?locale=es",
+				data: {
+					'nombre': nombre										
+				},
+				<!-- contentType: "" --->
+				dataType: "json",
+				success: function(results) {
+					var htmlResultado = "<ul>";
+					for (var i = 0; i< results.length; i++) {
+						htmlResultado += "<li>"+results[i].nombre+"</li>";
+					}
+					htmlResultado += "</ul>";
+					$("#results").html(htmlResultado);
+				}				
+			});
+		});
+	});
+</script>
 <form action="${pageContext.request.contextPath}/private/MateriaPrimaServlet"
 	method="post" class="search-container">
 
@@ -18,7 +41,7 @@
 	<c:forEach var="error" items="${errors.getFieldErrors(Attributes.NOMBRE)}">
 		<li class="error-message"><fmt:message key="${error}" bundle="${messages}" /></li>
 	</c:forEach>
-	<input type="text" name="nombre" placeholder="Ejemplo: Placa base" />
+	<input id="nombre" type="text" name="nombre" placeholder="Ejemplo: Placa base" />
 
 	<!-- Campo: ID -->
 	<label>Id:</label>
@@ -61,7 +84,7 @@
 </form>
 
 
-<div class="results-container">
+<div class="results-container" id="results">
 	<!--  getPage() ? -->
 	<c:choose>
 		<c:when test="${not empty resultados}">
